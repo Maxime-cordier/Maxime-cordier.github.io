@@ -1,0 +1,29 @@
+<html>
+	<head>
+	<script type="text/javascript">
+		function init()
+		{
+			laDiv1=document.createElement('div');
+			laDiv1.setAttribute('id','div1');
+			laDiv2=document.getElementById('div2');
+			laDiv1.setAttribute('style',"border-color:red; border-style: dotted;");
+			laDiv2.appendChild(laDiv1);
+		}
+	</script>
+	</head>
+	<body onload='init()'>
+		<div id='div2' style="border-color:black; border-style: solid;"></div>
+	</body>
+</html>
+
+
+<!-- 
+1)le code appel une fonction init()
+cette fct créé un élément 'div' et lui donne les attribus 'id' et 'style'/
+Elle recherche les éléments appelé 'div2' et lui donne 'div' comme enfant.
+
+2)on peut sélectionner des éléments selon l'ID, selon la class, selon le type, etc...
+
+3)Utiliser element.innerHTML
+
+-->
